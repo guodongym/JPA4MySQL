@@ -1,0 +1,19 @@
+package #<daoPackage>;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.sql.Blob;
+import java.sql.Clob;
+import java.sql.Timestamp;
+import java.util.Date;
+import java.util.List;
+
+import #<modelPackage>.#<modelName>;
+import com.etiansoft.tools.hibernate.HibernateDao;
+
+import org.springframework.stereotype.Repository;
+
+/** #<tableComment>(#<tableName>) **/
+@Repository
+public class #<daoName> extends HibernateDao<#<modelName>> {
+}

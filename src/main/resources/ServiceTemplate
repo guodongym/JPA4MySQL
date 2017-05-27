@@ -1,0 +1,19 @@
+package #<servicePackage>;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.sql.Blob;
+import java.sql.Clob;
+import java.sql.Timestamp;
+import java.util.Date;
+import java.util.List;
+
+import #<modelPackage>.#<modelName>;
+import com.etiansoft.tools.hibernate.HibernateService;
+
+import org.springframework.stereotype.Service;
+
+/** #<tableComment>(#<tableName>) **/
+@Service
+public class #<serviceName> extends HibernateService<#<modelName>, #<modelName>Vo> {
+}
