@@ -1,0 +1,2 @@
+# JPA4MySQL
+MySQL生成JPA注解工具类
