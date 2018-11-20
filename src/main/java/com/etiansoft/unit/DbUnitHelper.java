@@ -1,20 +1,5 @@
 package com.etiansoft.unit;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
-
 import org.dbunit.DatabaseUnitException;
 import org.dbunit.database.DatabaseConfig;
 import org.dbunit.database.ForwardOnlyResultSetTableFactory;
@@ -32,6 +17,11 @@ import org.dbunit.dataset.xml.XmlProducer;
 import org.dbunit.ext.oracle.OracleConnection;
 import org.dbunit.operation.DatabaseOperation;
 import org.xml.sax.InputSource;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.sql.*;
+import java.util.*;
 
 public class DbUnitHelper {
 
@@ -111,8 +101,7 @@ public class DbUnitHelper {
 	}
 
 	/**
-	 * �����ݼ��ļ�������ԭ��ݿ����ݡ�
-	 * 
+	 *
 	 * @param dbConnection
 	 * @param input
 	 * @param flat
